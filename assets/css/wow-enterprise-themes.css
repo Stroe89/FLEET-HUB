@@ -1,0 +1,1004 @@
+/**
+ * 🚀 WOW ULTRA PERFORMANCE THEMES SYSTEM 8K HDR
+ * Sistema ultra performantă cu efecte spectaculoase avansate
+ * Optimizat pentru performanță extremă și efecte WOW maxime
+ * Păstrează layout-ul original 100%
+ */
+
+/* === ⚡ OPTIMIZĂRI PERFORMANȚĂ === */
+* {
+    will-change: auto;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* === 🎨 VARIABILE ULTRA ENTERPRISE === */
+:root {
+    /* 🌟 Ultra Performance Gradients */
+    --wow-quantum: conic-gradient(from 180deg at 50% 50%, #667eea 0deg, #764ba2 120deg, #a855f7 240deg, #667eea 360deg);
+    --wow-cyber: radial-gradient(circle at 30% 70%, #56ab2f 0%, #a8e6cf 45%, #00ff88 100%);
+    --wow-digital: linear-gradient(45deg, #ff9a9e 0%, #fecfef 25%, #ffeaa7 50%, #fab1a0 75%, #ff9a9e 100%);
+    --wow-neural: conic-gradient(from 45deg, #a18cd1 0deg, #fbc2eb 90deg, #667eea 180deg, #764ba2 270deg, #a18cd1 360deg);
+    --wow-matrix: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 25%, #0a4d0a 50%, #1a1a1a 75%, #0d0d0d 100%);
+    --wow-platinum: conic-gradient(from 0deg at 50% 50%, #eef2f3 0deg, #8e9eab 60deg, #c7d2fe 120deg, #e2e8f0 180deg, #eef2f3 360deg);
+    --wow-fusion: radial-gradient(ellipse at top, #fc466b 0%, #3f5efb 50%, #667eea 100%);
+    --wow-aurora: linear-gradient(270deg, #84fab0 0%, #8fd3f4 33%, #a8edea 66%, #84fab0 100%);
+    --wow-cosmos: conic-gradient(from 90deg, #d299c2 0deg, #fef9d7 72deg, #a855f7 144deg, #84fab0 216deg, #d299c2 360deg);
+    --wow-titanium: radial-gradient(circle at 70% 30%, #ffecd2 0%, #fcb69f 35%, #f093fb 70%, #f5576c 100%);
+    --wow-arctic: linear-gradient(120deg, #a8edea 0%, #fed6e3 30%, #d299c2 60%, #a8edea 100%);
+    --wow-magma: conic-gradient(from 180deg, #ff8a80 0deg, #ea80fc 90deg, #f093fb 180deg, #ffa726 270deg, #ff8a80 360deg);
+    
+    /* 🔮 Ultra Glass Effects */
+    --wow-glass-bg: rgba(255, 255, 255, 0.08);
+    --wow-glass-border: rgba(255, 255, 255, 0.12);
+    --wow-glass-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.37),
+        0 2px 16px rgba(31, 38, 135, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    --wow-glass-blur: blur(40px);
+    --wow-glass-hover: rgba(255, 255, 255, 0.15);
+    
+    /* ⚡ Performance Animations */
+    --wow-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --wow-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --wow-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --wow-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    /* 🌟 Advanced Effects */
+    --wow-glow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.2);
+    --wow-neon: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+    --wow-particle: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+    
+    /* Current Theme Variables */
+    --current-theme-bg: var(--wow-quantum);
+    --current-theme-glass: rgba(102, 126, 234, 0.08);
+    --current-theme-accent: #667eea;
+    --current-theme-glow: rgba(102, 126, 234, 0.4);
+}
+
+/* === 🌟 ULTRA TEMA QUANTUM BLUE === */
+[data-theme="quantum"], 
+body.theme-quantum {
+    --current-theme-bg: var(--wow-quantum);
+    --current-theme-glass: rgba(102, 126, 234, 0.08);
+    --current-theme-accent: #667eea;
+    --current-theme-glow: rgba(102, 126, 234, 0.4);
+    --current-theme-light: rgba(102, 126, 234, 0.05);
+    animation: quantum-pulse 4s ease-in-out infinite;
+}
+
+/* === 🚀 ULTRA TEMA CYBER GREEN === */
+[data-theme="cyber"], 
+body.theme-cyber {
+    --current-theme-bg: var(--wow-cyber);
+    --current-theme-glass: rgba(86, 171, 47, 0.08);
+    --current-theme-accent: #56ab2f;
+    --current-theme-glow: rgba(86, 171, 47, 0.4);
+    --current-theme-light: rgba(86, 171, 47, 0.05);
+    animation: cyber-flow 6s linear infinite;
+}
+
+/* === 🔥 ULTRA TEMA DIGITAL ORANGE === */
+[data-theme="digital"], 
+body.theme-digital {
+    --current-theme-bg: var(--wow-digital);
+    --current-theme-glass: rgba(255, 154, 158, 0.08);
+    --current-theme-accent: #ff9a9e;
+    --current-theme-glow: rgba(255, 154, 158, 0.4);
+    --current-theme-light: rgba(255, 154, 158, 0.05);
+    animation: digital-wave 5s ease-in-out infinite;
+}
+
+/* === 🧠 ULTRA TEMA NEURAL PURPLE === */
+[data-theme="neural"], 
+body.theme-neural {
+    --current-theme-bg: var(--wow-neural);
+    --current-theme-glass: rgba(161, 140, 209, 0.08);
+    --current-theme-accent: #a18cd1;
+    --current-theme-glow: rgba(161, 140, 209, 0.4);
+    --current-theme-light: rgba(161, 140, 209, 0.05);
+    animation: neural-spark 3s ease-in-out infinite;
+}
+
+/* === ⚫ ULTRA TEMA MATRIX DARK === */
+[data-theme="matrix"], 
+body.theme-matrix {
+    --current-theme-bg: var(--wow-matrix);
+    --current-theme-glass: rgba(35, 37, 38, 0.15);
+    --current-theme-accent: #414345;
+    --current-theme-light: rgba(65, 67, 69, 0.1);
+}
+
+/* === 💎 TEMA PLATINUM SILVER === */
+[data-theme="platinum"], 
+body.theme-platinum {
+    --current-theme-bg: var(--wow-platinum);
+    --current-theme-glass: rgba(238, 242, 243, 0.15);
+    --current-theme-accent: #8e9eab;
+    --current-theme-light: rgba(142, 158, 171, 0.1);
+}
+
+/* === ❤️ TEMA FUSION RED === */
+[data-theme="fusion"], 
+body.theme-fusion {
+    --current-theme-bg: var(--wow-fusion);
+    --current-theme-glass: rgba(252, 70, 107, 0.15);
+    --current-theme-accent: #fc466b;
+    --current-theme-light: rgba(252, 70, 107, 0.1);
+}
+
+/* === 🌊 TEMA AURORA TEAL === */
+[data-theme="aurora"], 
+body.theme-aurora {
+    --current-theme-bg: var(--wow-aurora);
+    --current-theme-glass: rgba(132, 250, 176, 0.15);
+    --current-theme-accent: #84fab0;
+    --current-theme-light: rgba(132, 250, 176, 0.1);
+}
+
+/* === 🌌 TEMA COSMOS VIOLET === */
+[data-theme="cosmos"], 
+body.theme-cosmos {
+    --current-theme-bg: var(--wow-cosmos);
+    --current-theme-glass: rgba(210, 153, 194, 0.15);
+    --current-theme-accent: #d299c2;
+    --current-theme-light: rgba(210, 153, 194, 0.1);
+}
+
+/* === 🏆 TEMA TITANIUM GOLD === */
+[data-theme="titanium"], 
+body.theme-titanium {
+    --current-theme-bg: var(--wow-titanium);
+    --current-theme-glass: rgba(255, 236, 210, 0.15);
+    --current-theme-accent: #ffecd2;
+    --current-theme-light: rgba(255, 236, 210, 0.1);
+}
+
+/* === ❄️ TEMA ARCTIC BLUE === */
+[data-theme="arctic"], 
+body.theme-arctic {
+    --current-theme-bg: var(--wow-arctic);
+    --current-theme-glass: rgba(168, 237, 234, 0.15);
+    --current-theme-accent: #a8edea;
+    --current-theme-light: rgba(168, 237, 234, 0.1);
+}
+
+/* === 🌋 TEMA MAGMA ORANGE === */
+[data-theme="magma"], 
+body.theme-magma {
+    --current-theme-bg: var(--wow-magma);
+    --current-theme-glass: rgba(255, 138, 128, 0.15);
+    --current-theme-accent: #ff8a80;
+    --current-theme-light: rgba(255, 138, 128, 0.1);
+}
+
+/* === 🎯 APLICAREA TEMEI PE BODY === */
+body {
+    background: var(--current-theme-bg) !important;
+    background-attachment: fixed !important;
+    min-height: 100vh !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow-x: hidden !important;
+}
+
+/* Particle Background Effect */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    animation: wowFloatingParticles 20s infinite linear;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes wowFloatingParticles {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+    100% { transform: translateY(0px) rotate(360deg); }
+}
+
+/* === 🏢 HEADER ULTRA PROFESSIONAL === */
+.top-header {
+    background: var(--current-theme-glass) !important;
+    backdrop-filter: var(--wow-glass-blur) !important;
+    border-bottom: 1px solid var(--wow-glass-border) !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.top-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: wowHeaderShimmer 3s infinite;
+}
+
+@keyframes wowHeaderShimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.top-header:hover {
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.25) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* === 📱 SIDEBAR MULTINAȚIONALĂ === */
+.sidebar-wrapper {
+    background: var(--current-theme-glass) !important;
+    backdrop-filter: var(--wow-glass-blur) !important;
+    border-right: 1px solid var(--wow-glass-border) !important;
+    box-shadow: 8px 0 32px rgba(31, 38, 135, 0.2) !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+}
+
+.sidebar-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--current-theme-accent), transparent);
+    animation: wowSidebarPulse 2s infinite alternate;
+}
+
+@keyframes wowSidebarPulse {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+/* Menu Items Enterprise */
+.metismenu li > a {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+    margin: 4px 8px !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.metismenu li > a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--current-theme-light), transparent);
+    transition: left 0.6s ease;
+}
+
+.metismenu li > a:hover::before {
+    left: 100%;
+}
+
+.metismenu li > a:hover {
+    background: var(--current-theme-light) !important;
+    color: #ffffff !important;
+    transform: translateX(8px) scale(1.02) !important;
+    box-shadow: 0 8px 25px var(--current-theme-glass) !important;
+}
+
+.metismenu li.mm-active > a {
+    background: var(--current-theme-accent) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 25px var(--current-theme-glass) !important;
+}
+
+/* === 📄 MAIN CONTENT AREAS === */
+.page-wrapper {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(15px) !important;
+    border-radius: 20px !important;
+    margin: 15px !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    transition: var(--wow-transition) !important;
+}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 15px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: var(--wow-transition) !important;
+}
+
+/* === 💳 CARDS ENTERPRISE === */
+.card {
+    background: var(--current-theme-glass) !important;
+    backdrop-filter: var(--wow-glass-blur) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    border-radius: 16px !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--current-theme-accent);
+    transform: scaleX(0);
+    transition: transform 0.4s var(--wow-bounce);
+    transform-origin: left;
+}
+
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-8px) scale(1.02) !important;
+    box-shadow: 0 20px 40px rgba(31, 38, 135, 0.3) !important;
+}
+
+/* === 🔘 BUTTONS ENTERPRISE === */
+.btn {
+    border-radius: 12px !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary {
+    background: var(--current-theme-accent) !important;
+    border-color: var(--current-theme-accent) !important;
+}
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.05) !important;
+    box-shadow: 0 10px 25px var(--current-theme-glass) !important;
+}
+
+/* === 📝 FORMS ENTERPRISE === */
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    border-radius: 12px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: var(--wow-transition) !important;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: var(--current-theme-accent) !important;
+    box-shadow: 0 0 0 3px var(--current-theme-light) !important;
+    transform: scale(1.02) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* === 🔍 SEARCH BAR ENTERPRISE === */
+.search-control {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    border-radius: 25px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(15px) !important;
+    transition: var(--wow-transition) !important;
+}
+
+.search-control:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: var(--current-theme-accent) !important;
+    box-shadow: 0 0 0 3px var(--current-theme-light), 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transform: scale(1.02) translateY(-1px) !important;
+}
+
+/* === 📊 DROPDOWN MENUS ENTERPRISE === */
+.dropdown-menu {
+    background: var(--current-theme-glass) !important;
+    backdrop-filter: var(--wow-glass-blur) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 8px 25px rgba(31, 38, 135, 0.2) !important;
+    border-radius: 20px !important;
+    animation: wowDropdownSlideIn 0.4s var(--wow-bounce) !important;
+}
+
+@keyframes wowDropdownSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dropdown-item {
+    color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 15px !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.dropdown-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.dropdown-item:hover::before {
+    left: 100%;
+}
+
+.dropdown-item:hover {
+    background: var(--current-theme-light) !important;
+    color: #ffffff !important;
+    transform: translateX(8px) scale(1.02) !important;
+}
+
+/* === 🎨 THEME CARDS SPECTACULAR === */
+.theme-card-enterprise {
+    background: var(--wow-glass-bg) !important;
+    backdrop-filter: var(--wow-glass-blur) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    border-radius: 20px !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+}
+
+.theme-card-enterprise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--current-theme-accent), #00d4ff);
+    transform: scaleX(0);
+    transition: transform 0.4s var(--wow-bounce);
+    transform-origin: left;
+}
+
+.theme-card-enterprise:hover::before {
+    transform: scaleX(1);
+}
+
+.theme-card-enterprise:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-10px) scale(1.05) !important;
+    box-shadow: 0 25px 50px rgba(31, 38, 135, 0.3) !important;
+}
+
+.theme-card-enterprise:active {
+    transform: translateY(-5px) scale(1.02) !important;
+}
+
+.theme-icon-enterprise {
+    border-radius: 15px !important;
+    transition: var(--wow-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.theme-icon-enterprise::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%);
+}
+
+.theme-card-enterprise:hover .theme-icon-enterprise::before {
+    width: 100px;
+    height: 100px;
+}
+
+.theme-card-enterprise:hover .theme-icon-enterprise {
+    transform: scale(1.1) rotate(5deg) !important;
+}
+
+/* === 🔔 NOTIFICATIONS SPECTACULAR === */
+.wow-notification {
+    position: fixed !important;
+    top: 30px !important;
+    right: 30px !important;
+    background: rgba(0, 0, 0, 0.95) !important;
+    color: white !important;
+    padding: 20px 30px !important;
+    border-radius: 20px !important;
+    backdrop-filter: blur(30px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3) !important;
+    z-index: 10000 !important;
+    animation: wowNotificationSlideIn 0.8s var(--wow-bounce) !important;
+    min-width: 320px !important;
+    max-width: 400px !important;
+}
+
+@keyframes wowNotificationSlideIn {
+    from { 
+        transform: translateX(120%) scale(0.7) rotate(10deg); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateX(0) scale(1) rotate(0deg); 
+        opacity: 1; 
+    }
+}
+
+.wow-notification-exit {
+    animation: wowNotificationSlideOut 0.8s ease-in !important;
+}
+
+@keyframes wowNotificationSlideOut {
+    from { 
+        transform: translateX(0) scale(1) rotate(0deg); 
+        opacity: 1; 
+    }
+    to { 
+        transform: translateX(120%) scale(0.7) rotate(-10deg); 
+        opacity: 0; 
+    }
+}
+
+/* === 📱 RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .page-wrapper {
+        margin: 10px !important;
+        border-radius: 15px !important;
+    }
+    
+    .card:hover {
+        transform: translateY(-4px) scale(1.01) !important;
+    }
+    
+    .wow-notification {
+        top: 20px !important;
+        right: 20px !important;
+        left: 20px !important;
+        min-width: auto !important;
+        max-width: none !important;
+    }
+}
+
+/* === ✨ SPECIAL EFFECTS === */
+.wow-glow {
+    animation: wowGlowPulse 2s infinite alternate !important;
+}
+
+@keyframes wowGlowPulse {
+    0% { 
+        box-shadow: 0 0 20px var(--current-theme-accent);
+        filter: brightness(1);
+    }
+    100% { 
+        box-shadow: 0 0 40px var(--current-theme-accent);
+        filter: brightness(1.2);
+    }
+}
+
+/* === 🎯 SCROLLBAR ENTERPRISE === */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--current-theme-accent) !important;
+    border-radius: 10px !important;
+    transition: var(--wow-transition) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--current-theme-accent) !important;
+    box-shadow: 0 0 10px var(--current-theme-accent) !important;
+}
+
+/* === 🎨 TEMA SELECTION ANIMATION === */
+.theme-switching {
+    animation: wowThemeSwitch 0.8s ease-in-out !important;
+}
+
+@keyframes wowThemeSwitch {
+    0% { 
+        filter: brightness(1) hue-rotate(0deg);
+        transform: scale(1);
+    }
+    50% { 
+        filter: brightness(1.2) hue-rotate(180deg);
+        transform: scale(1.02);
+    }
+    100% { 
+        filter: brightness(1) hue-rotate(360deg);
+        transform: scale(1);
+    }
+}
+
+/* === 🚀 PERFORMANCE OPTIMIZATIONS === */
+* {
+    will-change: auto !important;
+}
+
+.card:hover,
+.btn:hover,
+.theme-card-enterprise:hover {
+    will-change: transform, box-shadow !important;
+}
+
+/* === 🎉 SUCCESS ANIMATIONS === */
+.wow-success {
+    animation: wowSuccessBounce 0.6s var(--wow-bounce) !important;
+}
+
+@keyframes wowSuccessBounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.1); }
+    60% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+/* === 💫 LOADING EFFECTS === */
+.wow-loading {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.wow-loading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: wowLoadingShimmer 1.5s infinite;
+}
+
+@keyframes wowLoadingShimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* === ⚡ ULTRA PERFORMANCE WOW ANIMATIONS === */
+@keyframes quantum-pulse {
+    0%, 100% { 
+        filter: hue-rotate(0deg) brightness(1) saturate(1);
+        background-position: 0% 50%;
+    }
+    25% { 
+        filter: hue-rotate(90deg) brightness(1.1) saturate(1.2);
+        background-position: 25% 25%;
+    }
+    50% { 
+        filter: hue-rotate(180deg) brightness(1.2) saturate(1.4);
+        background-position: 100% 50%;
+    }
+    75% { 
+        filter: hue-rotate(270deg) brightness(1.1) saturate(1.2);
+        background-position: 75% 75%;
+    }
+}
+
+@keyframes cyber-flow {
+    0% { 
+        background-position: 0% 0%;
+        filter: hue-rotate(0deg) contrast(1);
+    }
+    33% { 
+        background-position: 50% 100%;
+        filter: hue-rotate(120deg) contrast(1.2);
+    }
+    66% { 
+        background-position: 100% 0%;
+        filter: hue-rotate(240deg) contrast(1.1);
+    }
+    100% { 
+        background-position: 0% 0%;
+        filter: hue-rotate(360deg) contrast(1);
+    }
+}
+
+@keyframes digital-wave {
+    0%, 100% { 
+        background-position: 0% 50%;
+        filter: sepia(0) hue-rotate(0deg);
+    }
+    20% { 
+        background-position: 20% 20%;
+        filter: sepia(0.2) hue-rotate(45deg);
+    }
+    40% { 
+        background-position: 80% 80%;
+        filter: sepia(0.4) hue-rotate(90deg);
+    }
+    60% { 
+        background-position: 60% 20%;
+        filter: sepia(0.2) hue-rotate(135deg);
+    }
+    80% { 
+        background-position: 20% 80%;
+        filter: sepia(0.1) hue-rotate(180deg);
+    }
+}
+
+@keyframes neural-spark {
+    0%, 100% { 
+        filter: brightness(1) blur(0px);
+        box-shadow: none;
+    }
+    33% { 
+        filter: brightness(1.3) blur(0.5px);
+        box-shadow: 0 0 30px var(--current-theme-glow);
+    }
+    66% { 
+        filter: brightness(1.1) blur(0.2px);
+        box-shadow: 0 0 15px var(--current-theme-glow);
+    }
+}
+
+@keyframes wowFloatingParticles {
+    0% { 
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.3;
+    }
+    33% { 
+        transform: translateY(-20px) rotate(120deg);
+        opacity: 0.6;
+    }
+    66% { 
+        transform: translateY(-10px) rotate(240deg);
+        opacity: 0.4;
+    }
+    100% { 
+        transform: translateY(0px) rotate(360deg);
+        opacity: 0.3;
+    }
+}
+
+/* === 🌟 ULTRA SIDEBAR EFFECTS (PĂSTREAZĂ LAYOUT-UL EXACT) === */
+.sidebar-wrapper {
+    backdrop-filter: var(--wow-glass-blur) !important;
+    background: var(--wow-glass-bg) !important;
+    border-right: 1px solid var(--wow-glass-border) !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    position: relative !important;
+}
+
+.sidebar-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--current-theme-bg);
+    opacity: 0.05;
+    pointer-events: none;
+    animation: wowFloatingParticles 15s infinite ease-in-out;
+}
+
+/* === 🎯 ULTRA HEADER EFFECTS (PĂSTREAZĂ LAYOUT-UL EXACT) === */
+.top-header {
+    backdrop-filter: var(--wow-glass-blur) !important;
+    background: var(--wow-glass-bg) !important;
+    border-bottom: 1px solid var(--wow-glass-border) !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    position: relative !important;
+}
+
+.top-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--current-theme-bg);
+    opacity: 0.03;
+    pointer-events: none;
+    animation: quantum-pulse 8s infinite ease-in-out;
+}
+
+/* === 💫 ULTRA NAV EFFECTS === */
+.navbar-nav .nav-link {
+    transition: var(--wow-transition) !important;
+    border-radius: 8px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.navbar-nav .nav-link:hover {
+    background: var(--wow-glass-hover) !important;
+    transform: translateY(-1px) scale(1.02) !important;
+    box-shadow: 0 4px 15px var(--current-theme-glow) !important;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--current-theme-glow), transparent);
+    transition: left 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    left: 100%;
+}
+
+/* === ⚡ ULTRA BUTTON PERFORMANCE === */
+.btn {
+    position: relative !important;
+    overflow: hidden !important;
+    backdrop-filter: blur(15px) !important;
+    background: var(--wow-glass-bg) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    transform-style: preserve-3d !important;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--current-theme-bg);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    opacity: 0.1;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.05) rotateX(5deg) !important;
+    box-shadow: 
+        0 10px 30px var(--current-theme-glow),
+        var(--wow-glass-shadow) !important;
+}
+
+/* === 🎨 CARD ULTRA EFFECTS === */
+.card {
+    backdrop-filter: var(--wow-glass-blur) !important;
+    background: var(--wow-glass-bg) !important;
+    border: 1px solid var(--wow-glass-border) !important;
+    box-shadow: var(--wow-glass-shadow) !important;
+    transition: var(--wow-transition) !important;
+    transform-style: preserve-3d !important;
+    position: relative !important;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--current-theme-bg);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+.card:hover::before {
+    opacity: 0.08;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02) rotateX(2deg) rotateY(1deg) !important;
+    box-shadow: 
+        0 20px 40px var(--current-theme-glow),
+        var(--wow-glass-shadow) !important;
+}
+
+/* === 🌐 RESPONSIVE PERFORMANCE === */
+@media (max-width: 768px) {
+    body::before,
+    .sidebar-wrapper::before,
+    .top-header::after {
+        animation-duration: 30s !important;
+    }
+    
+    .card:hover,
+    .btn:hover {
+        transform: translateY(-4px) scale(1.01) !important;
+    }
+}
+
+/* === 🎯 FINAL OPTIMIZATIONS === */
+@supports (backdrop-filter: blur(1px)) {
+    .sidebar-wrapper,
+    .top-header,
+    .card,
+    .btn {
+        backdrop-filter: var(--wow-glass-blur) !important;
+    }
+}
+
+/* === 💥 ULTRA GLOW EFFECTS === */
+.glow-effect {
+    filter: var(--wow-particle);
+    text-shadow: var(--wow-neon);
+}
+
+/* === 🚀 FINISHING TOUCHES === */
+html {
+    scroll-behavior: smooth !important;
+}
+
+body * {
+    transition: var(--wow-transition) !important;
+}
+
+/* Performance hint for browser */
+.sidebar-wrapper,
+.top-header,
+.main-wrapper {
+    contain: layout style paint !important;
+}

@@ -1,0 +1,941 @@
+/* NTS TOUR - Sistema Globală de Teme Ultra Modernă */
+:root {
+    /* Culori de bază */
+    --nts-primary: #007bff;
+    --nts-secondary: #6c757d;
+    --nts-success: #28a745;
+    --nts-danger: #dc3545;
+    --nts-warning: #ffc107;
+    --nts-info: #17a2b8;
+    
+    /* Fundal și text pentru tema albastră */
+    --nts-body-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --nts-card-bg: rgba(255, 255, 255, 0.15);
+    --nts-text-color: #ffffff;
+    --nts-text-muted: rgba(255, 255, 255, 0.7);
+    
+    /* Efecte glassmorphism */
+    --nts-glass-bg: rgba(255, 255, 255, 0.1);
+    --nts-glass-border: rgba(255, 255, 255, 0.2);
+    --nts-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    --nts-shadow-hover: 0 15px 35px rgba(31, 38, 135, 0.5);
+    
+    /* Tranziții */
+    --nts-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --nts-transition-fast: all 0.15s ease;
+}
+
+/* === TEME MULTIPLE MODERNE === */
+
+/* Tema Navy Stellar - Nouă temă cu animații de stele */
+[data-bs-theme="navy-stellar"] {
+    --nts-body-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 100%);
+    --nts-card-bg: rgba(15, 23, 42, 0.6);
+    --nts-glass-bg: rgba(30, 41, 59, 0.4);
+    --nts-glass-border: rgba(148, 163, 184, 0.2);
+    --nts-text-color: #f1f5f9;
+    --nts-text-muted: rgba(241, 245, 249, 0.7);
+    --nts-shadow: 0 8px 32px rgba(15, 23, 42, 0.8);
+    --nts-accent: #3b82f6;
+}
+
+/* Tema Cyberpunk Violet */
+[data-bs-theme="cyberpunk-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #4c1d95 0%, #7c3aed 50%, #a855f7 100%);
+    --nts-card-bg: rgba(147, 51, 234, 0.15);
+    --nts-glass-bg: rgba(139, 69, 219, 0.2);
+    --nts-glass-border: rgba(168, 85, 247, 0.3);
+    --nts-text-color: #f8fafc;
+    --nts-text-muted: rgba(248, 250, 252, 0.7);
+    --nts-shadow: 0 8px 32px rgba(139, 69, 219, 0.4);
+}
+
+/* Tema Ocean Deep */
+[data-bs-theme="ocean-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+    --nts-card-bg: rgba(14, 165, 233, 0.15);
+    --nts-glass-bg: rgba(2, 132, 199, 0.2);
+    --nts-glass-border: rgba(3, 105, 161, 0.3);
+    --nts-text-color: #f0f9ff;
+    --nts-text-muted: rgba(240, 249, 255, 0.7);
+    --nts-shadow: 0 8px 32px rgba(2, 132, 199, 0.4);
+}
+
+/* Tema Forest Green */
+[data-bs-theme="forest-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #059669 0%, #047857 50%, #065f46 100%);
+    --nts-card-bg: rgba(5, 150, 105, 0.15);
+    --nts-glass-bg: rgba(4, 120, 87, 0.2);
+    --nts-glass-border: rgba(6, 95, 70, 0.3);
+    --nts-text-color: #f0fdf4;
+    --nts-text-muted: rgba(240, 253, 244, 0.7);
+    --nts-shadow: 0 8px 32px rgba(4, 120, 87, 0.4);
+}
+
+/* Tema Sunset Orange */
+[data-bs-theme="sunset-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #b91c1c 100%);
+    --nts-card-bg: rgba(234, 88, 12, 0.15);
+    --nts-glass-bg: rgba(220, 38, 38, 0.2);
+    --nts-glass-border: rgba(185, 28, 28, 0.3);
+    --nts-text-color: #fef2f2;
+    --nts-text-muted: rgba(254, 242, 242, 0.7);
+    --nts-shadow: 0 8px 32px rgba(220, 38, 38, 0.4);
+}
+
+/* Tema Rose Gold */
+[data-bs-theme="rose-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #ec4899 0%, #be185d 50%, #9f1239 100%);
+    --nts-card-bg: rgba(236, 72, 153, 0.15);
+    --nts-glass-bg: rgba(190, 24, 93, 0.2);
+    --nts-glass-border: rgba(159, 18, 57, 0.3);
+    --nts-text-color: #fdf2f8;
+    --nts-text-muted: rgba(253, 242, 248, 0.7);
+    --nts-shadow: 0 8px 32px rgba(190, 24, 93, 0.4);
+}
+
+/* Tema Space Black */
+[data-bs-theme="space-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #020617 100%);
+    --nts-card-bg: rgba(30, 41, 59, 0.4);
+    --nts-glass-bg: rgba(15, 23, 42, 0.6);
+    --nts-glass-border: rgba(2, 6, 23, 0.5);
+    --nts-text-color: #f1f5f9;
+    --nts-text-muted: rgba(241, 245, 249, 0.7);
+    --nts-shadow: 0 8px 32px rgba(15, 23, 42, 0.6);
+}
+
+/* Tema Neon Mint */
+[data-bs-theme="mint-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+    --nts-card-bg: rgba(16, 185, 129, 0.15);
+    --nts-glass-bg: rgba(5, 150, 105, 0.2);
+    --nts-glass-border: rgba(4, 120, 87, 0.3);
+    --nts-text-color: #ecfdf5;
+    --nts-text-muted: rgba(236, 253, 245, 0.7);
+    --nts-shadow: 0 8px 32px rgba(5, 150, 105, 0.4);
+}
+
+/* === ANIMAȚII STELE PENTRU TEMA NAVY === */
+[data-bs-theme="navy-stellar"] body {
+    position: relative;
+    overflow: hidden;
+}
+
+[data-bs-theme="navy-stellar"] body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+        radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1px 1px at 90px 40px, #ffffff, transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 160px 30px, #ffffff, transparent);
+    background-repeat: repeat;
+    background-size: 200px 150px;
+    animation: ntsStarsMove 25s linear infinite;
+    z-index: -2;
+    pointer-events: none;
+}
+
+[data-bs-theme="navy-stellar"] body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+        radial-gradient(ellipse at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 30%, rgba(147, 51, 234, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 60% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+    animation: ntsNebulaFloat 20s ease-in-out infinite alternate;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Adaugă comete animate */
+[data-bs-theme="navy-stellar"]:root::before {
+    content: '';
+    position: fixed;
+    top: 10%;
+    left: -5%;
+    width: 3px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 
+        0 0 8px #ffffff, 
+        0 0 16px #3b82f6,
+        -40px 0 20px rgba(255,255,255,0.8),
+        -80px 0 40px rgba(59,130,246,0.6);
+    animation: ntsCometTrail 12s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes ntsStarsMove {
+    0% { transform: translateY(0px) translateX(0px); }
+    100% { transform: translateY(-150px) translateX(-100px); }
+}
+
+@keyframes ntsNebulaFloat {
+    0% { 
+        transform: scale(1) rotate(0deg); 
+        opacity: 0.4; 
+    }
+    50% { 
+        transform: scale(1.2) rotate(1deg); 
+        opacity: 0.6; 
+    }
+    100% { 
+        transform: scale(1.1) rotate(2deg); 
+        opacity: 0.5; 
+    }
+}
+
+@keyframes ntsCometTrail {
+    0% { 
+        transform: translateX(-100px) translateY(50px) rotate(-30deg);
+        opacity: 0;
+    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { 
+        transform: translateX(calc(100vw + 200px)) translateY(-100px) rotate(-30deg);
+        opacity: 0;
+    }
+}
+
+/* Efecte speciale pentru Navy Stellar */
+[data-bs-theme="navy-stellar"] .main-content {
+    position: relative;
+}
+
+[data-bs-theme="navy-stellar"] .main-content::before {
+    content: '✨';
+    position: fixed;
+    top: 15%;
+    right: 20%;
+    font-size: 1rem;
+    animation: ntsTwinkle 3s ease-in-out infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+[data-bs-theme="navy-stellar"] .main-content::after {
+    content: '⭐';
+    position: fixed;
+    top: 60%;
+    left: 15%;
+    font-size: 0.8rem;
+    animation: ntsTwinkle 4s ease-in-out infinite reverse;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes ntsTwinkle {
+    0%, 100% { 
+        opacity: 0.3; 
+        transform: scale(1); 
+    }
+    50% { 
+        opacity: 1; 
+        transform: scale(1.2); 
+    }
+}
+
+/* === STILURI GLOBALE === */
+
+/* Container principal cu glassmorphism */
+body {
+    background: var(--nts-body-bg) !important;
+    color: var(--nts-text-color) !important;
+    min-height: 100vh;
+    transition: var(--nts-transition);
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Efect de backdrop blur pentru tot site-ul */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* === HEADER MODERN === */
+.top-header {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid var(--nts-glass-border) !important;
+    box-shadow: var(--nts-shadow) !important;
+    transition: var(--nts-transition) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1030 !important;
+}
+
+.top-header:hover {
+    box-shadow: var(--nts-shadow-hover) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Search bar modernizat */
+.search-control {
+    background: var(--nts-glass-bg) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    color: var(--nts-text-color) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: var(--nts-transition) !important;
+}
+
+.search-control:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: var(--nts-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(var(--nts-primary), 0.25) !important;
+    transform: scale(1.02) !important;
+}
+
+.search-control::placeholder {
+    color: var(--nts-text-muted) !important;
+}
+
+/* === DROPDOWN MENU MODERN === */
+.dropdown-menu {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: var(--nts-shadow) !important;
+    border-radius: 16px !important;
+    padding: 0.5rem !important;
+    animation: ntsDropdownFadeIn 0.3s ease-out !important;
+}
+
+@keyframes ntsDropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.dropdown-item {
+    color: var(--nts-text-color) !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1rem !important;
+    margin: 0.25rem 0 !important;
+    transition: var(--nts-transition) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--nts-text-color) !important;
+    transform: translateX(5px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dropdown-item:active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: var(--nts-text-color) !important;
+}
+
+/* === MEGA MENU MODERN === */
+.mega-menu {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(25px) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: var(--nts-shadow-hover) !important;
+    border-radius: 20px !important;
+    padding: 2rem !important;
+    animation: ntsMegaMenuSlideIn 0.4s ease-out !important;
+}
+
+@keyframes ntsMegaMenuSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.mega-menu .card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: var(--nts-transition) !important;
+    overflow: hidden !important;
+}
+
+.mega-menu .card:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-5px) scale(1.02) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+.mega-menu .card h5,
+.mega-menu .card p {
+    color: var(--nts-text-color) !important;
+}
+
+.mega-menu .card p {
+    color: var(--nts-text-muted) !important;
+}
+
+/* === NOTIFICATIONS MODERN === */
+.dropdown-notify {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(25px) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: var(--nts-shadow-hover) !important;
+    border-radius: 20px !important;
+    padding: 0 !important;
+    min-width: 380px !important;
+    max-height: 500px !important;
+    overflow-y: auto !important;
+}
+
+.notify-list .dropdown-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 1rem !important;
+    transition: var(--nts-transition) !important;
+}
+
+.notify-list .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: none !important;
+}
+
+.notify-title {
+    color: var(--nts-text-color) !important;
+    font-weight: 600 !important;
+}
+
+.notify-desc {
+    color: var(--nts-text-muted) !important;
+    font-size: 0.85rem !important;
+}
+
+.notify-time {
+    color: var(--nts-text-muted) !important;
+    font-size: 0.75rem !important;
+    opacity: 0.8 !important;
+}
+
+/* === BADGE NOTIFICATION === */
+.badge-notify {
+    background: linear-gradient(45deg, #ff4757, #ff3838) !important;
+    animation: ntsPulse 2s infinite !important;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5) !important;
+}
+
+@keyframes ntsPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* === NAVBAR MODERN === */
+.navbar-nav .nav-link {
+    color: var(--nts-text-color) !important;
+    padding: 0.75rem !important;
+    border-radius: 12px !important;
+    transition: var(--nts-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    left: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* === SIDEBAR ULTRA PROFESIONAL DE MULTINAȚIONALĂ === */
+.sidebar-wrapper {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    border-right: 1px solid var(--nts-glass-border) !important;
+    box-shadow: var(--nts-shadow) !important;
+    width: 280px !important;
+    transition: var(--nts-transition) !important;
+}
+
+.sidebar-header {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)) !important;
+    border-bottom: 1px solid var(--nts-glass-border) !important;
+    padding: 2rem 1.5rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.sidebar-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--nts-primary), #00d4ff, var(--nts-primary));
+    animation: ntsHeaderGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes ntsHeaderGlow {
+    0% { opacity: 0.5; transform: scaleX(0.8); }
+    100% { opacity: 1; transform: scaleX(1); }
+}
+
+.logo-name h5 {
+    color: var(--nts-text-color) !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    letter-spacing: 1px !important;
+    background: linear-gradient(135deg, var(--nts-text-color), rgba(255, 255, 255, 0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-icon img {
+    transition: var(--nts-transition) !important;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) !important;
+}
+
+.logo-icon:hover img {
+    transform: rotate(5deg) scale(1.1) !important;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4)) !important;
+}
+
+/* === MENU LABELS PROFESIONALE === */
+.menu-label {
+    color: var(--nts-text-muted) !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    padding: 1.5rem 1.5rem 0.5rem !important;
+    margin-top: 1rem !important;
+    position: relative !important;
+}
+
+.menu-label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--nts-glass-border), transparent);
+}
+
+/* === MENU ITEMS ULTRA PROFESIONALI === */
+.metismenu li > a {
+    color: var(--nts-text-color) !important;
+    padding: 1rem 1.5rem !important;
+    border-radius: 15px !important;
+    margin: 0.3rem 1rem !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    border: 1px solid transparent !important;
+}
+
+/* Icoane moderne pentru menu */
+.metismenu li > a i.material-icons-outlined {
+    font-size: 1.3rem !important;
+    opacity: 0.8 !important;
+    transition: var(--nts-transition) !important;
+    min-width: 24px !important;
+    text-align: center !important;
+}
+
+/* Efect shimmer pentru menu items */
+.metismenu li > a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metismenu li > a:hover::before {
+    left: 100%;
+}
+
+/* Efect glow pentru hover */
+.metismenu li > a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 3px;
+    height: 0;
+    background: linear-gradient(180deg, var(--nts-primary), #00d4ff);
+    border-radius: 0 2px 2px 0;
+    transition: height 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.metismenu li > a:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)) !important;
+    color: var(--nts-text-color) !important;
+    transform: translateX(8px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.metismenu li > a:hover::after {
+    height: 60%;
+}
+
+.metismenu li > a:hover i {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+    color: var(--nts-primary) !important;
+}
+
+/* Menu activ */
+.metismenu li.mm-active > a {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08)) !important;
+    color: var(--nts-text-color) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    transform: translateX(8px) !important;
+}
+
+.metismenu li.mm-active > a::after {
+    height: 80%;
+}
+
+.metismenu li.mm-active > a i {
+    color: var(--nts-primary) !important;
+    opacity: 1 !important;
+}
+
+/* Submenu styling */
+.metismenu .mm-collapse {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 0 0 15px 15px !important;
+    margin: 0 1rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-top: none !important;
+}
+
+.metismenu .mm-collapse li > a {
+    padding: 0.8rem 1.5rem 0.8rem 3rem !important;
+    margin: 0.2rem 0.5rem !important;
+    font-size: 0.9rem !important;
+}
+
+/* === USER ROLE DISPLAY MODERN === */
+.user-role-display {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)) !important;
+    border-top: 1px solid var(--nts-glass-border) !important;
+    padding: 1.5rem !important;
+    margin-top: auto !important;
+    position: relative !important;
+    text-align: center !important;
+    color: var(--nts-text-muted) !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.5px !important;
+}
+
+.user-role-display::before {
+    content: '👤';
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+/* === BUTONUL DE PERSONALIZARE - POZIȚIE FIXĂ === */
+.btn.position-fixed.bottom-0.end-0 {
+    position: fixed !important;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    z-index: 1040 !important;
+    background: linear-gradient(135deg, var(--nts-primary), #0056b3) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 1rem 1.5rem !important;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4) !important;
+    backdrop-filter: blur(15px) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-weight: 600 !important;
+    color: white !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    min-width: auto !important;
+    animation: ntsFloatPulse 3s ease-in-out infinite !important;
+}
+
+.btn.position-fixed.bottom-0.end-0:hover {
+    transform: translateY(-5px) scale(1.05) !important;
+    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.6) !important;
+    background: linear-gradient(135deg, #0056b3, var(--nts-primary)) !important;
+}
+
+.btn.position-fixed.bottom-0.end-0 i {
+    font-size: 1.2rem !important;
+    animation: ntsRotateGlow 2s ease-in-out infinite alternate !important;
+}
+
+@keyframes ntsFloatPulse {
+    0%, 100% { box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4); }
+    50% { box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6); }
+}
+
+@keyframes ntsRotateGlow {
+    0% { transform: rotate(0deg); filter: brightness(1); }
+    100% { transform: rotate(5deg); filter: brightness(1.2); }
+}
+
+/* === RESPONSIVE PENTRU BUTONUL DE PERSONALIZARE === */
+@media (max-width: 768px) {
+    .btn.position-fixed.bottom-0.end-0 {
+        bottom: 1rem !important;
+        right: 1rem !important;
+        padding: 0.8rem 1.2rem !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .btn.position-fixed.bottom-0.end-0 span {
+        display: none !important;
+    }
+    
+    .btn.position-fixed.bottom-0.end-0 {
+        min-width: 60px !important;
+        justify-content: center !important;
+    }
+}
+
+/* === CARDS MODERN === */
+.card {
+    background: var(--nts-card-bg) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: var(--nts-shadow) !important;
+    border-radius: 20px !important;
+    transition: var(--nts-transition) !important;
+    overflow: hidden !important;
+}
+
+.card:hover {
+    box-shadow: var(--nts-shadow-hover) !important;
+    transform: translateY(-5px) scale(1.02) !important;
+}
+
+.card-header {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-bottom: 1px solid var(--nts-glass-border) !important;
+    color: var(--nts-text-color) !important;
+}
+
+.card-body {
+    color: var(--nts-text-color) !important;
+}
+
+.card-title {
+    color: var(--nts-text-color) !important;
+    font-weight: 600 !important;
+}
+
+/* === BUTTONS MODERN === */
+.btn {
+    border-radius: 12px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-weight: 500 !important;
+    transition: var(--nts-transition) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border: none !important;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--nts-primary), #0056b3) !important;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3) !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) scale(1.05) !important;
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4) !important;
+}
+
+/* === FORMS MODERN === */
+.form-control {
+    background: var(--nts-glass-bg) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    border-radius: 12px !important;
+    color: var(--nts-text-color) !important;
+    padding: 0.75rem 1rem !important;
+    transition: var(--nts-transition) !important;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: var(--nts-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(var(--nts-primary), 0.25) !important;
+    transform: scale(1.02) !important;
+}
+
+.form-control::placeholder {
+    color: var(--nts-text-muted) !important;
+}
+
+/* === TEXT COLORS === */
+.text-white, .text-white-50 {
+    color: var(--nts-text-color) !important;
+}
+
+.text-muted {
+    color: var(--nts-text-muted) !important;
+}
+
+/* === RESPONSIVE ANIMATIONS === */
+@media (prefers-reduced-motion: no-preference) {
+    .nts-animate-in {
+        animation: ntsSlideInUp 0.6s ease-out;
+    }
+    
+    @keyframes ntsSlideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* === SCROLLBAR MODERN === */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: var(--nts-transition);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* === TEMA ADAPTIVĂ PENTRU EXISTENTE === */
+[data-bs-theme="light"] {
+    --nts-body-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    --nts-card-bg: rgba(255, 255, 255, 0.9);
+    --nts-text-color: #212529;
+    --nts-text-muted: #6c757d;
+    --nts-glass-bg: rgba(255, 255, 255, 0.8);
+    --nts-glass-border: rgba(0, 0, 0, 0.1);
+    --nts-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] {
+    --nts-body-bg: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    --nts-card-bg: rgba(33, 37, 41, 0.9);
+    --nts-text-color: #f8f9fa;
+    --nts-text-muted: rgba(248, 249, 250, 0.7);
+    --nts-glass-bg: rgba(33, 37, 41, 0.8);
+    --nts-glass-border: rgba(255, 255, 255, 0.1);
+    --nts-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="semi-dark"] {
+    --nts-body-bg: linear-gradient(135deg, #343a40 0%, #495057 100%);
+    --nts-card-bg: rgba(52, 58, 64, 0.9);
+    --nts-text-color: #f8f9fa;
+    --nts-text-muted: rgba(248, 249, 250, 0.7);
+    --nts-glass-bg: rgba(52, 58, 64, 0.8);
+    --nts-glass-border: rgba(255, 255, 255, 0.15);
+    --nts-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="bordered-theme"] {
+    --nts-body-bg: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    --nts-card-bg: rgba(255, 255, 255, 0.95);
+    --nts-text-color: #212529;
+    --nts-text-muted: #6c757d;
+    --nts-glass-bg: rgba(255, 255, 255, 0.9);
+    --nts-glass-border: rgba(0, 0, 0, 0.125);
+    --nts-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* === SPECIAL EFFECTS === */
+.nts-glow {
+    animation: ntsGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes ntsGlow {
+    from { box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); }
+    to { box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); }
+}

@@ -1,0 +1,477 @@
+/**
+ * NTS TOUR - Configurația Ultra Modernă pentru Header & Navbar
+ * Stiluri speciale pentru îmbunătățirea aspectului profesional
+ */
+
+/* === HEADER ULTRA MODERN === */
+.top-header {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    border-bottom: 1px solid var(--nts-glass-border) !important;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1030 !important;
+    border-radius: 0 0 20px 20px !important;
+}
+
+.top-header:hover {
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.25) !important;
+    transform: translateY(-1px) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* === NAVBAR BRAND & LOGO === */
+.navbar-brand {
+    transition: var(--nts-transition) !important;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05) !important;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) !important;
+}
+
+/* === SEARCH BAR ULTRA MODERN === */
+.search-bar {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.search-control {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 25px !important;
+    color: var(--nts-text-color) !important;
+    padding: 0.875rem 3rem 0.875rem 2.5rem !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    backdrop-filter: blur(15px) !important;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+    font-weight: 500 !important;
+}
+
+.search-control:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: var(--nts-primary) !important;
+    box-shadow: 0 0 0 3px rgba(var(--nts-primary), 0.1), 
+                0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transform: scale(1.02) translateY(-1px) !important;
+    outline: none !important;
+}
+
+.search-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-weight: 400 !important;
+}
+
+/* Search Icons */
+.search-bar .material-icons-outlined {
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: var(--nts-transition) !important;
+    z-index: 2 !important;
+}
+
+.search-bar .material-icons-outlined:hover {
+    color: var(--nts-text-color) !important;
+    transform: scale(1.1) !important;
+}
+
+/* === DROPDOWN MENU ULTRA MODERN === */
+.dropdown-menu {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 
+                0 8px 25px rgba(31, 38, 135, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 0.75rem !important;
+    animation: ntsDropdownSlideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    overflow: hidden !important;
+}
+
+@keyframes ntsDropdownSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px) scale(0.95);
+        filter: blur(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.dropdown-item {
+    color: var(--nts-text-color) !important;
+    border-radius: 15px !important;
+    padding: 1rem 1.25rem !important;
+    margin: 0.25rem 0 !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    font-weight: 500 !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.dropdown-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.dropdown-item:hover::before {
+    left: 100%;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: var(--nts-text-color) !important;
+    transform: translateX(8px) scale(1.02) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dropdown-item:active {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateX(4px) scale(0.98) !important;
+}
+
+.dropdown-item img {
+    transition: var(--nts-transition) !important;
+}
+
+.dropdown-item:hover img {
+    transform: scale(1.1) !important;
+    filter: brightness(1.1) !important;
+}
+
+/* === MEGA MENU ULTRA MODERN === */
+.mega-menu {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(30px) saturate(180%) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15), 
+                0 10px 30px rgba(31, 38, 135, 0.3) !important;
+    border-radius: 25px !important;
+    padding: 2.5rem !important;
+    animation: ntsMegaMenuFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    min-width: 800px !important;
+}
+
+@keyframes ntsMegaMenuFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-25px) scale(0.9);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.mega-menu .card {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(15px) !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.mega-menu .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--nts-primary), #00d4ff);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: left;
+}
+
+.mega-menu .card:hover::before {
+    transform: scaleX(1);
+}
+
+.mega-menu .card:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    transform: translateY(-8px) scale(1.03) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.mega-menu .card h5 {
+    color: var(--nts-text-color) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.mega-menu .card p {
+    color: var(--nts-text-muted) !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+}
+
+.mega-menu .mega-menu-icon {
+    padding: 0.75rem !important;
+    border-radius: 12px !important;
+    transition: var(--nts-transition) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mega-menu .card:hover .mega-menu-icon {
+    transform: scale(1.1) rotate(5deg) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* === NOTIFICATIONS ULTRA MODERN === */
+.dropdown-notify {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(30px) saturate(180%) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15), 
+                0 10px 30px rgba(31, 38, 135, 0.3) !important;
+    border-radius: 25px !important;
+    padding: 0 !important;
+    min-width: 420px !important;
+    max-height: 600px !important;
+    overflow: hidden !important;
+}
+
+.dropdown-notify .offcanvas-header,
+.dropdown-notify .px-3.py-1 {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-bottom: 1px solid var(--nts-glass-border) !important;
+    padding: 1.5rem !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.dropdown-notify .notiy-title {
+    color: var(--nts-text-color) !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+}
+
+.notify-list {
+    max-height: 450px !important;
+    overflow-y: auto !important;
+    padding: 0.5rem !important;
+}
+
+.notify-list .dropdown-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 1.25rem !important;
+    margin: 0.25rem !important;
+    border-radius: 15px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.notify-list .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: translateX(5px) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.notify-title {
+    color: var(--nts-text-color) !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.notify-desc {
+    color: var(--nts-text-muted) !important;
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.notify-time {
+    color: var(--nts-text-muted) !important;
+    font-size: 0.75rem !important;
+    opacity: 0.8 !important;
+    font-weight: 500 !important;
+}
+
+/* === BADGE NOTIFICATION ULTRA MODERN === */
+.badge-notify {
+    background: linear-gradient(45deg, #ff4757, #ff3838) !important;
+    animation: ntsPulseGlow 2s infinite !important;
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.6), 
+                0 0 25px rgba(255, 71, 87, 0.3) !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    font-weight: 700 !important;
+    font-size: 0.7rem !important;
+}
+
+@keyframes ntsPulseGlow {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 0 15px rgba(255, 71, 87, 0.6), 
+                    0 0 25px rgba(255, 71, 87, 0.3);
+    }
+    50% { 
+        transform: scale(1.15);
+        box-shadow: 0 0 20px rgba(255, 71, 87, 0.8), 
+                    0 0 35px rgba(255, 71, 87, 0.5);
+    }
+}
+
+/* === NAVBAR LINKS ULTRA MODERN === */
+.navbar-nav .nav-link {
+    color: var(--nts-text-color) !important;
+    padding: 0.875rem 1rem !important;
+    border-radius: 15px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    font-weight: 500 !important;
+    margin: 0 0.25rem !important;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+    left: 100%;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--nts-primary), #00d4ff);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 80%;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+    color: var(--nts-text-color) !important;
+}
+
+.navbar-nav .nav-link i {
+    transition: var(--nts-transition) !important;
+}
+
+.navbar-nav .nav-link:hover i {
+    transform: scale(1.1) !important;
+}
+
+/* === USER DROPDOWN ULTRA MODERN === */
+.dropdown-user {
+    background: var(--nts-glass-bg) !important;
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    border: 1px solid var(--nts-glass-border) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 
+                0 8px 25px rgba(31, 38, 135, 0.2) !important;
+    border-radius: 20px !important;
+    padding: 1rem !important;
+    min-width: 280px !important;
+}
+
+.dropdown-user .user-name {
+    color: var(--nts-text-color) !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dropdown-user img {
+    border: 3px solid rgba(255, 255, 255, 0.3) !important;
+    transition: var(--nts-transition) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.dropdown-user img:hover {
+    transform: scale(1.05) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* === RESPONSIVE IMPROVEMENTS === */
+@media (max-width: 768px) {
+    .top-header {
+        border-radius: 0 !important;
+    }
+    
+    .search-control {
+        font-size: 0.9rem !important;
+        padding: 0.75rem 2.5rem 0.75rem 2rem !important;
+    }
+    
+    .mega-menu {
+        min-width: auto !important;
+        padding: 1.5rem !important;
+        margin: 0 1rem !important;
+    }
+    
+    .dropdown-notify {
+        min-width: 320px !important;
+        margin: 0 1rem !important;
+    }
+}
+
+/* === TEMA SWITCHING ANIMATION === */
+[data-bs-theme] {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+[data-bs-theme] * {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease !important;
+}
+
+/* === LOADING ANIMATION PENTRU THEME SWITCH === */
+.nts-theme-switching {
+    position: relative;
+    overflow: hidden;
+}
+
+.nts-theme-switching::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: ntsThemeSwitch 1s ease-out;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+@keyframes ntsThemeSwitch {
+    from { left: -100%; }
+    to { left: 100%; }
+}
